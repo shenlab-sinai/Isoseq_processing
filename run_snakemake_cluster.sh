@@ -1,4 +1,3 @@
-conda activate py3
 snakemake --snakefile Snakefile \
     -j 499 \
     --cluster-config cluster.json \
@@ -11,4 +10,4 @@ snakemake --snakefile Snakefile \
     -J {cluster.jobname} \
     -o {cluster.output} \
     -e {cluster.error}"
-conda deactivate
+
